@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#0a0a0f; --card:#121219; --line:#22222e;
+    --tx:#ececf2; --tx2:#a9a9bb; --tx3:#6f6f82; --accent:#8b6cff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--tx);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 22px 90px}
+  header{border-bottom:1px solid var(--line); padding-bottom:26px; margin-bottom:34px}
+  .brand{font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:800; margin:0 0 10px}
+  h1{font-size:clamp(28px,6vw,38px); line-height:1.15; margin:0 0 10px; letter-spacing:-.02em}
+  .meta{color:var(--tx3); font-size:14px; margin:0}
+  h2{font-size:19px; margin:38px 0 10px; letter-spacing:-.01em}
+  p{color:var(--tx2); margin:0 0 14px; white-space:pre-line}
+  a{color:var(--accent)}
+  nav{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+  nav a{
+    display:inline-block; text-decoration:none; font-size:14px; font-weight:600;
+    padding:8px 14px; border:1px solid var(--line); border-radius:999px; background:var(--card);
+  }
+  nav a[aria-current]{border-color:var(--accent); color:var(--accent)}
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--line); color:var(--tx3); font-size:13px}
+  @media (prefers-color-scheme: light){
+    :root{--bg:#fbfbfd; --card:#fff; --line:#e6e6ee; --tx:#14141c; --tx2:#4a4a5a; --tx3:#7c7c8e; --accent:#6b47e6}
+  }
+</style>
+<title>Política de privacidad · LifeOS</title>
+<meta name="description" content="Qué datos recoge LifeOS, dónde se guardan y con quién se comparten.">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="brand">LifeOS</p>
+  <h1>Política de privacidad</h1>
+  <p class="meta">Última revisión: 3 de septiembre de 2026</p>
+  <nav>
+    <a href="./" aria-current="page">Política de privacidad</a>
+    <a href="./condiciones.html">Condiciones de uso</a>
+  </nav>
+</header>
+  <h2>Lo corto</h2>
+  <p>LifeOS guarda tus datos en tu iPhone. Lo único que sale de él es lo que tú decides compartir con quien tú eliges: tu ficha pública, los mensajes que mandas y lo que compartes con tus amigos. No hay publicidad, no hay analítica de terceros y no se vende nada a nadie.</p>
+  <h2>Qué se guarda en tu iPhone</h2>
+  <p>Todo lo que apuntas: entrenos, series, rutinas, récords, hábitos, objetivos, diario, agenda, notas, estudios, compras, viajes y álbumes. Vive en el almacén local de la app, cifrado por el sistema mientras el iPhone está bloqueado. Si borras la app, se va con ella.
+
+Si creas una cuenta con correo y contraseña, la contraseña no se guarda: se guarda su derivación con PBKDF2-HMAC-SHA256 y 210.000 iteraciones, con una sal distinta por cuenta. Nadie —tampoco nosotros— puede recuperarla.</p>
+  <h2>Qué sale de tu iPhone, y solo si tú lo mandas</h2>
+  <p>· Tu ficha pública: nombre, alias, biografía, estado, código de amigo y color. Es lo que ve quien te añade.
+· Los mensajes y lo que compartes: rutinas, entrenos, objetivos, hábitos, álbumes e invitaciones. Van al buzón de la persona a la que se lo mandas.
+· Las solicitudes de amistad.
+
+Nada de esto es público en internet: las reglas del servidor solo dejan leer tu buzón a ti, y tu ficha se puede consultar de una en una, nunca en bloque.</p>
+  <h2>Salud y Apple Watch</h2>
+  <p>Con tu permiso, LifeOS lee de Salud las calorías activas y la frecuencia cardiaca durante un entreno, y escribe en Salud los entrenamientos que terminas. Esos datos se quedan entre tu iPhone, tu reloj y Salud: no se mandan a ningún servidor, ni se comparten con tus amigos, ni se usan para nada más. Puedes retirar el permiso cuando quieras en Ajustes → Privacidad y seguridad → Salud.</p>
+  <h2>Con quién se comparte</h2>
+  <p>Con la gente que tú añades, y solo lo que tú les dejes ver (puedes ajustarlo persona a persona).
+
+Por debajo, la app usa Google Firebase (Firestore y notificaciones) como transporte de mensajes y fichas, y iCloud de Apple cuando ese es el canal elegido. Son proveedores de infraestructura: guardan lo que la app les manda para poder entregarlo. No se comparte con nadie más, no hay redes publicitarias y no se hace seguimiento entre apps.</p>
+  <h2>Cuánto tiempo se guarda</h2>
+  <p>Lo del iPhone, mientras tengas la app. Lo del buzón del servidor se borra solo a los 30 días de haberse entregado. Tu ficha pública está mientras tengas la cuenta.</p>
+  <h2>Tus derechos</h2>
+  <p>Puedes exportar todos tus datos en un archivo desde Configuración → Copia de seguridad, y puedes eliminar tu cuenta desde Configuración → Cuenta → Eliminar cuenta. Al eliminarla se borra tu almacén local, tu ficha pública, tu buzón y tus conexiones.
+
+Si estás en la Unión Europea, tienes derecho de acceso, rectificación, supresión, limitación, portabilidad y oposición (RGPD). El borrado desde la app cubre la supresión; para lo demás, escribe a soporte@lifeos.app.</p>
+  <h2>Menores</h2>
+  <p>LifeOS no está pensada para menores de 13 años y no recoge datos de forma consciente de nadie de esa edad.</p>
+  <h2>Cambios</h2>
+  <p>Si cambia lo que se recoge, este texto cambia con ello y verás el aviso dentro de la app. Última revisión: 3 de septiembre de 2026.</p>
+<footer>
+  LifeOS · Daniel Pérez López · <a href="mailto:soporte@lifeos.app">soporte@lifeos.app</a><br>
+  Este texto es el mismo que se puede leer dentro de la app, en Configuración.
+</footer>
+</div>
+</body>
+</html>
